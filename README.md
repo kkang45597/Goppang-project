@@ -11,7 +11,7 @@
           password: 
           refresh-rate: 60
 ```
-실행하기 위해선 Gopang-config 리포지토리를 생성하고 파일을 넣은 뒤, 자신의 깃허브 아이디와 패스워드 토큰을 사용해야 합니다.
+실행하기 위해선 자기만의 Gopang-config 리포지토리를 생성하고 파일을 넣은 뒤, URL과 유저네임, 패스워드를 자신의 것으로 대체하여야 합니다. 패스워드는 토큰을 사용해야 합니다.
 
 ### [[ 프로젝트 PDF ]](https://github.com/kkang45597/Goppang-project/blob/main/Gopang%20Project.pdf) [[ Gopang-config ]](https://github.com/kkang45597/Gopang-config)
 <br>
