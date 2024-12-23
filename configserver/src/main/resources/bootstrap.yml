@@ -12,7 +12,7 @@ spring:
           default-label: main
           uri: https://github.com/kkang45597/Gopang-config
           username: kkang45597
-          password: 
+          password:
           refresh-rate: 60
 
 server:
