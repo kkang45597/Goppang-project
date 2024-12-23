@@ -46,6 +46,7 @@ docker-compose 실행 후, [ http://localhost:9411/zipkin ] 으로 접속하여 
 <img src="./image/K-002.png" width=90% /><br>
 
 <img src="./image/K-003.png" width=90% /><br>
+여기서 Trace Id를 얻을 수 있습니다.
 
 ---
 <br>
