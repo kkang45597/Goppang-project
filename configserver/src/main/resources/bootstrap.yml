@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: gopang-config
+  profiles:
+    active:
+      - git
+
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri: https://github.com/kkang45597/Gopang-config
+          username: kkang45597
+          password: 
+          refresh-rate: 60
+
+server:
+  port: 8071
+  tomcat:
+    mbeanregistry:
+      enabled: true
+
+#Enable all Spring Boot Actuator endpoints.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  tracing:
+    sampling:
+      probability: 1.0
+    propagation:
+      consume: b3
+      produce: b3_multi
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http:
+          server:
+            requests: true
+  zipkin:
+    tracing:
+      endpoint: http://zipkin-server:9411/api/v2/spans
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+  charset:
+    console: UTF-8
